@@ -1,0 +1,23 @@
+Environment variables
+
+.env .env.*
+
+Docker volumes (if mapped locally in future)
+
+sqlserver_data/ redis_data/ azurite_data/
+
+Logs
+
+*.log debug.log
+
+OS files
+
+.DS_Store Thumbs.db
+
+IDE
+
+.vscode/ .idea/
+
+Temporary files
+
+.tmp .temp
