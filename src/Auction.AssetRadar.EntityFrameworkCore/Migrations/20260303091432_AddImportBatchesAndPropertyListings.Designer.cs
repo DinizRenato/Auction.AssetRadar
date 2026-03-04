@@ -4,6 +4,7 @@ using Auction.AssetRadar.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Auction.AssetRadar.Migrations
 {
     [DbContext(typeof(AssetRadarDbContext))]
-    partial class AssetRadarDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260303091432_AddImportBatchesAndPropertyListings")]
+    partial class AddImportBatchesAndPropertyListings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
